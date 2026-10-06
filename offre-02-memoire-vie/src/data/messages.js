@@ -1,0 +1,77 @@
+import { daysAgo } from '../lib/format.js'
+
+// Messages d'exemple, signalés comme tels dans l'interface.
+export const RELATIONS = ['Camarade de classe', 'Famille', 'Ami ou amie', 'Collègue', 'Autre']
+
+export const initialMessages = [
+  {
+    id: 'msg-1',
+    memorial: 'simon-nanfa',
+    author: 'Un camarade du 12G2',
+    relation: 'Camarade de classe',
+    text: 'Repose en paix, cher camarade. Tu resteras à jamais dans nos cœurs.',
+    date: daysAgo(1),
+    status: 'publié',
+    example: true,
+  },
+  {
+    id: 'msg-2',
+    memorial: 'simon-nanfa',
+    author: 'Une amie de la famille',
+    relation: 'Ami ou amie',
+    text: 'Toutes nos condoléances à la famille. Que Dieu vous donne la force de traverser cette épreuve.',
+    date: daysAgo(2),
+    status: 'publié',
+    example: true,
+  },
+  {
+    id: 'msg-3',
+    memorial: 'simon-nanfa',
+    author: 'Une camarade du 12G2',
+    relation: 'Camarade de classe',
+    text: 'Merci pour les années partagées sur les bancs de l’école. Nous ne t’oublierons pas.',
+    date: daysAgo(2),
+    status: 'publié',
+    example: true,
+  },
+  {
+    id: 'msg-4',
+    memorial: 'martine-tchuente',
+    author: 'Un camarade du 12G2',
+    relation: 'Camarade de classe',
+    text: 'Chère Martine, tu restes dans nos pensées et dans nos prières.',
+    date: daysAgo(30),
+    status: 'publié',
+    example: true,
+  },
+  {
+    id: 'msg-5',
+    memorial: 'martine-tchuente',
+    author: 'Un ami',
+    relation: 'Ami ou amie',
+    text: 'Je n’ai pas pu être présent à tes obsèques. Grâce à cet espace, je peux enfin te dire au revoir.',
+    date: daysAgo(12),
+    status: 'publié',
+    example: true,
+  },
+  {
+    id: 'msg-6',
+    memorial: 'simon-nanfa',
+    author: 'Une voisine',
+    relation: 'Autre',
+    text: 'Courage à la famille. Nous sommes de tout cœur avec vous.',
+    date: daysAgo(0),
+    status: 'en attente',
+    example: true,
+  },
+  {
+    id: 'msg-7',
+    memorial: 'martine-tchuente',
+    author: 'Une ancienne collègue',
+    relation: 'Collègue',
+    text: 'Paix à son âme. Martine était une collègue attentive et généreuse.',
+    date: daysAgo(0),
+    status: 'en attente',
+    example: true,
+  },
+]
